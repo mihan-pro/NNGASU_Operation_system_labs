@@ -6,13 +6,13 @@
 int main()
 {
     char buffer[BUFFER_SIZE];
-    FILE* file1 = fopen("./textFile1.txt", "r");
+    FILE* file1 = fopen("/home/mike/NNGASU_Operation_system_labs/lab_work_2/textFile1.txt", "r");
     if (file1 == NULL)
     {
         perror("We have some problem with opening a file");
         exit(1);
     }
-    FILE* file2 = fopen("./textFile2.txt", "w");
+    FILE* file2 = fopen("/home/mike/NNGASU_Operation_system_labs/lab_work_2/textFile2.txt", "w");
     if (file2 == NULL)
     {
         perror("We have some problem with opening a file");
