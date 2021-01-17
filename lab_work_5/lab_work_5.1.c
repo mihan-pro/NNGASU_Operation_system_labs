@@ -17,13 +17,13 @@ int main ()
         perror("we have some problems with opepning the channel");
         exit(1);
     }
-    FILE *source = fopen("./textFile1.txt", O_RDONLY);
+    FILE* source = fopen("/home/mike/NNGASU_Operation_system_labs/lab_work_5/textFile1.txt", "r");
     if(source == NULL) 
     {
         perror("we have some problems with opepning the file");
         exit(1);
     }
-    FILE * FIFOchannel = fopen("channel", "w+");
+    FILE * FIFOchannel = fopen("./channel", "w+");
     if(FIFOchannel == NULL)
     {
         perror("we have some problems with reading the channel file");
