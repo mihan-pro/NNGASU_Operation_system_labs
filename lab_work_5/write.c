@@ -28,5 +28,6 @@ int main ()
         fputs(buffer, target);
     }
     fclose(target);
+    fclose(FIFOchannel);
     return 0;
 }
